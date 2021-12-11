@@ -1,0 +1,193 @@
+/* font */
+@font-face {
+  font-family: "Poppins";
+  src: url('../asset/font/Poppins-Regular.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+
+}
+
+/* NAVIGASI */
+.navigasi-bar {
+  position: relative;
+  width: 80%;
+  height: 80px;
+  left: 9%;
+  top: 0px;
+  right: 8.5%;
+  background: #63636395;
+}
+
+.navigasi-bar img {
+  margin-left: 40px;
+  margin-top: 1%;
+}
+
+.navigasi-bar ul {
+  list-style-type: none;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+}
+
+.navigasi-bar li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.navigasi-bar a {
+  text-decoration: none;
+  color: #eee;
+}
+
+.navigasi-bar a:hover{
+  color: rgb(192, 192, 192);
+  transition: .5s;
+}
+
+
+
+/* Footer */
+.footer {
+  width: 100%;
+  height: 260px;
+  background-color: #96C7C1;
+  margin-top: -35px;
+}
+
+.footer h2 {
+  margin-left: 8%;
+  margin-top: 33px;
+}
+
+.footer .copyright {
+  float: right;
+  margin-top: -140px;
+  margin-right: 8%;
+}
+
+.footer .copy {
+  float: left;
+  margin-right: 120px;
+  margin-top: 10px;
+}
+
+.footer .explore {
+  float: right;
+}
+
+.footer .explore li {
+  list-style-type: none;
+}
+
+.footer .explore a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer .kelompok {
+  float: right;
+  margin-right: 130px
+}
+
+.footer .kelompok ul {
+  list-style-type: none;
+}
+
+.footer .kelompok li {
+  line-height: 30px;
+}
+
+.social-media-image {
+  margin-left: 8%;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer .facebook img {
+  width: 25px;
+}
+
+.footer .youtube img {
+  width: 25px;
+}
+
+.footer .twitter img {
+  width: 25px;
+}
+
+.footer .instagram img{
+  width: 25px;
+}
+
+.footer a {
+  color: black;
+  text-decoration: none;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.back-to-top img {
+  width: 50px;
+}
+
+@media screen and (max-width: 640px){
+  .navigasi-bar ul {
+    display: flex;
+    justify-content: center;
+  }
+  div.social-media h2{
+    font-size: 120%;
+    padding-top: -30px;
+  }
+  .social-media-image{
+    display: flex;
+    width: 90%;
+  }
+  .copy{
+    font-size: 90%;
+    position: absolute;
+    left: 30px;
+    top: 1500px;
+  }
+  .kelompok{
+    display: none;
+  }
+  .explore{
+    float: right;
+    margin-top: 125px;
+  }
+}
+
+
+/* Metode Clear Fix */
+/* Global */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/* IE */
+.cf {
+  *zoom: 1;
+}

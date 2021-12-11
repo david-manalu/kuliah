@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheila On 7 - Fanbase</title>
+    <link rel="icon" href="../images/ShielaOn7Logo.svg">
+    <link rel="stylesheet" href="../style/style.css">
+    <style>
+        form {
+            margin-top: -85px;
+            padding-bottom: 160px;
+            text-align: center;
+        }
+
+        fieldset {
+            margin-left: 18%;
+            margin-right: 25%;
+            font-size: larger;
+            margin-top: 8%;
+            border-radius: 5px;
+            color: #eee;
+        }
+
+        textarea,
+        input {
+            border-radius: inherit;
+        }
+
+        body {
+            background-image: url('../images/bgSaran.jpg');
+            background-size: cover;
+            background-position: 0px -140px;
+            backdrop-filter: blur(10px);
+        }
+
+        .feedback {
+            width: 60em;
+            height: 100%;
+            margin: 130px auto;
+            border-radius: 8px;
+        }
+
+        button {
+            margin-top: 0px;
+            margin-left: 18.3%;
+            padding: 8px 5px;
+            background-color: #561363;
+            border-radius: 5px;
+            border: none;
+        }
+        button a{
+            text-decoration: none;
+            color: #eee;
+        }
+        input{
+            padding: 7px 3px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="feedback">
+        <button>
+            <a href="../index.html">Back to Home</a>
+        </button>
+        <form>
+            <fieldset>
+                <legend>Kotak Saran</legend>
+                <Label>Masukkan saran di sini : </Label> <br>
+                <textarea name="saran" id="saran" cols="90" rows="10"></textarea><br>
+                <input type="submit" value="Kirim Saran" onclick="cekButton()">
+                <input type="reset" value="Hapus Saran">
+            </fieldset>
+        </form>
+    </div>
+
+    <script src="../script/script.js"></script>
+</body>
+
+</html>
